@@ -189,14 +189,16 @@
     height: 100%;
 }
 
-.projects > div {
+.projects > .card {
     background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px rgb(0, 0, 0, 0.2);
 }
 
 .project-name {
     font-size: 24px;
     font-weight: bold;
-    padding: 40px 0px 0px 20px;
+    padding: 40px 0px 10px 20px;
 }
 
 .project-description {
@@ -217,6 +219,11 @@
     width: 100%;
 }
 
+.announcements {
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    gap: 15px;
+}
 .announcements .title {
     font-size: 28px;
     align-self: center;
@@ -224,9 +231,45 @@
 }
 
 .announcements .grid-container {
+    align-self: center;
     display: grid;
-    gap: 15px;
+    grid-template-rows: 1fr 1px 1fr 2px 1fr;
+    grid-template-columns: 75%;
+    gap: 10px;
     justify-content: center;
     align-content: center;
+    width: 90%;
+    height: 90%;
 }
 
+hr {
+    justify-self: center;
+    margin: 0;
+    border: 0;
+    clear:both;
+    display:block;
+    width: 110%;               
+    background-color: rgb(0, 0, 0, 0.2);
+    height: 2px;
+  }
+
+.announcements .name {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;    
+}
+
+.announcements .wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.announcements .grid-item {
+    align-self: center;
+}
+
+.announcements .description {
+    color: rgb(82, 82, 82);
+}
