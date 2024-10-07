@@ -16,20 +16,22 @@
 }
 
 .header {
+    position: relative;
+z-index: 10;
     grid-area: header;
-    background-color: rgb(255, 200, 0);
+    background-color: whitesmoke;
     padding: 10px 40px;
     display: grid;
     grid-template-columns: 2.5fr 1.5fr;
     grid-template-rows: 1fr 1.5fr;
     gap: 10px;
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
 .main-content {
     grid-area: main;
-    background-color: rgb(255, 60, 30);
+    background-color: rgb(220, 220, 220);
 }
-
 
 .sidebar {
     grid-area: sidebar;
@@ -94,7 +96,7 @@
 }
 
 .searchbar {
-    background-color: rgb(179, 179, 179);
+    background-color: rgb(210, 209, 209);
     height: 50%;
     width: 75%;
     border-radius: 20px;
@@ -167,11 +169,11 @@
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    gap: 50px 25px;
 }
 
 .main-content > div {
-    background-color: rgb(255, 200, 0);
+    background-color: rgb(220, 220, 220);
     display: grid;
 }
 
@@ -192,19 +194,20 @@
 .projects > .card {
     background-color: whitesmoke;
     border-radius: 10px;
-    box-shadow: 4px 4px 2px rgb(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 2px rgb(80, 80, 80, 0.2);
+    border-left: 10px solid rgb(232, 186, 0);
 }
 
 .project-name {
     font-size: 24px;
     font-weight: bold;
-    padding: 40px 0px 10px 20px;
+    padding: 40px 0px 10px 30px;
 }
 
 .project-description {
     font-size: 20px;
     color: rgb(82, 82, 82);
-    padding: 0 40px 80px 20px;
+    padding: 0 40px 80px 30px;
 }
 
 .project-icons { 
@@ -219,7 +222,7 @@
     width: 100%;
 }
 
-.announcements {
+.announcements, .trending {
     display: grid;
     grid-template-rows: 30px 1fr;
     gap: 15px;
@@ -259,11 +262,13 @@ hr {
     padding-bottom: 5px;    
 }
 
-.announcements .wrapper {
+.wrapper{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: whitesmoke;
     border-radius: 10px;
+    box-shadow: 3px 3px 2px rgb(80, 80, 80, 0.2);
 }
 
 .announcements .grid-item {
@@ -272,4 +277,36 @@ hr {
 
 .announcements .description {
     color: rgb(82, 82, 82);
+}
+
+.trending .title {
+    font-size: 28px;
+    align-self: center;
+    height: 100%;
+}
+
+.trending .grid-container {
+    height: 90%;
+    width: 90%;
+    display: grid;
+    grid-template-rows: repeat(4, 70px);
+    grid-template-columns: 1fr 2fr;
+    gap: 25px 10px;
+    background-color: whitesmoke;
+    align-items: center;
+}
+
+.trending .name {
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 5px;    
+}
+
+.trending .project {
+    color: rgb(82, 82, 82);
+    font-size: 18px;
+} 
+
+.title {
+    font-weight: 500;
 }
