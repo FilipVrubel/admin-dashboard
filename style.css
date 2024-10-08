@@ -17,7 +17,7 @@
 
 .header {
     position: relative;
-z-index: 10;
+    z-index: 10;
     grid-area: header;
     background-color: whitesmoke;
     padding: 10px 40px;
@@ -29,6 +29,7 @@ z-index: 10;
 }
 
 .main-content {
+    position: relative;
     grid-area: main;
     background-color: rgb(220, 220, 220);
 }
@@ -41,24 +42,29 @@ z-index: 10;
     padding-left: 20px;
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 300px 100px;
+    grid-template-rows: 50px 400px 200px;
     font-size: 20px;
     font-weight: bold;
     position: fixed;
-    height: 150vw;
+    height: 100vw;
     width: 15vw;
+    gap: 10px;
 }
 
 .sidebar-item {
     display: grid;
     grid-template-columns: 30px 1fr;    
-    grid-template-rows: repeat(6, 20px);
-    gap: 20px 15px;
+    grid-template-rows: repeat(6, 30px);
+    gap: 20px 20px;
+    padding-left: 10px;
     align-items: center;
 }
-
+        
+.navigation {
+    align-content: center;
+}
 .branding {
-    grid-template-rows: repeat(3, 20px);
+    grid-template-rows: repeat(3, 30px);
 }
 
 .placeholder {
@@ -70,10 +76,10 @@ z-index: 10;
 
 .logo {
     display: grid;
-    grid-template-columns: 30px 1fr;
-    grid-template-rows: 30px;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 50px;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .logo-placeholder {
