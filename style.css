@@ -19,7 +19,7 @@
     position: relative;
     z-index: 10;
     grid-area: header;
-    background-color: whitesmoke;
+    background-color: rgb(255, 208, 0);
     padding: 10px 40px;
     display: grid;
     grid-template-columns: 2.5fr 1.5fr;
@@ -31,12 +31,12 @@
 .main-content {
     position: relative;
     grid-area: main;
-    background-color: rgb(220, 220, 220);
+    background-color: #e2e8f0;
 }
 
 .sidebar {
     grid-area: sidebar;
-    background-color: rgb(0, 153, 255);
+    background-color: #0ea5e9;
     color: white;
     padding-top: 20px;
     padding-left: 20px;
@@ -68,7 +68,7 @@
 }
 
 .placeholder {
-    background-color: whitesmoke;
+    background-color: #fafafa;
     width: 20px;
     justify-self: center;
     height: 100%;
@@ -83,7 +83,7 @@
 }
 
 .logo-placeholder {
-    background-color: whitesmoke;
+    background-color: #fafafa;
     width: 30px;
     height: 100%;
 }
@@ -102,7 +102,7 @@
 }
 
 .searchbar {
-    background-color: rgb(210, 209, 209);
+    background-color: #fafafa;
     height: 50%;
     width: 75%;
     border-radius: 20px;
@@ -164,8 +164,8 @@
 .buttons button {
    border-radius: 30px;
    border: none;
-   background-color: rgb(0, 153, 255);
-   color: whitesmoke;
+   background-color: #0ea5e9;
+   color: #fafafa;
    font-weight: bold;
    font-size: 20px;
 }
@@ -176,10 +176,13 @@
     grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 50px 25px;
+    position: relative;
+    grid-area: main;
+    background-color: #e2e8f0;
 }
 
 .main-content > div {
-    background-color: rgb(220, 220, 220);
+    background-color: #e2e8f0;
     display: grid;
 }
 
@@ -198,10 +201,10 @@
 }
 
 .projects > .card {
-    background-color: whitesmoke;
+    background-color: #fafafa;
     border-radius: 10px;
     box-shadow: 3px 3px 2px rgb(80, 80, 80, 0.2);
-    border-left: 10px solid rgb(232, 186, 0);
+    border-left: 10px solid #fbbf24;
 }
 
 .project-name {
@@ -272,7 +275,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: #fafafa;
     border-radius: 10px;
     box-shadow: 3px 3px 2px rgb(80, 80, 80, 0.2);
 }
@@ -298,7 +301,7 @@ hr {
     grid-template-rows: repeat(4, 70px);
     grid-template-columns: 1fr 2fr;
     gap: 25px 10px;
-    background-color: whitesmoke;
+    background-color: #fafafa;
     align-items: center;
 }
 
